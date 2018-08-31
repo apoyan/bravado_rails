@@ -1,0 +1,9 @@
+:logfile: ./log/sidekiq.log
+:concurrency: 5
+development:
+  :connection: redis://redis:6379/1
+production:
+  :connection: redis://redis:6379/1
+
+:queues:
+  - ["default", 10]
